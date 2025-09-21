@@ -1,0 +1,16 @@
+.legalease-highlight {
+  transition: all 0.2s ease;
+}
+
+.legalease-highlight:hover {
+  background: rgba(22, 78, 99, 0.2) !important;
+  border-color: #0891b2 !important;
+}
+
+.legalease-tooltip * {
+  box-sizing: border-box;
+}
+
+.legalease-tooltip button:hover {
+  opacity: 0.8;
+}

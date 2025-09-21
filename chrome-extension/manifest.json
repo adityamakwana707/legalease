@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "LegalEase AI - Legal Document Analyzer",
+  "version": "1.0.0",
+  "description": "Analyze legal content on any webpage with AI-powered clause explanations and risk scoring.",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "host_permissions": ["https://*/*", "http://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "LegalEase AI"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
